@@ -1,0 +1,32 @@
+from pathlib import Path
+import os
+
+ROOT = Path(__file__).resolve().parent
+DATA_ROOT = Path(os.environ.get("LBOT_DATA_ROOT", ROOT / "data_samples"))
+
+DEVICE = "auto"
+IMG_SIZE = 960
+BATCH_SIZE = 8
+EPOCHS = 600
+LEARNING_RATE = 1e-3
+BACKBONE_LR = 2e-4
+LLRD_GAMMA = 0.9
+WEIGHT_DECAY = 5e-4
+GRAD_ACCUM_STEPS = 8
+VAL_INTERVAL = 10
+EARLY_STOP_PATIENCE = 30
+FINETUNE_EPOCHS = 150
+FINETUNE_LR = 1.5e-4
+
+CONF_THRESHOLD = 0.05
+NMS_THRESHOLD = 0.5
+SAVE_PATH = str(ROOT / "runs" / "train_det" / "best.pth")
+
+EMBED_DIM = 8
+EMBED_LOSS_WEIGHT = 1.0
+REG_LOSS_WEIGHT = 2.0
+DFL_REG_MAX = 8
+
+CLS_IOU_AWARE = True
+CLS_IOU_POWER = 0.5
+CLS_IOU_FLOOR = 0.3

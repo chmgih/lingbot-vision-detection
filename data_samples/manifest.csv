@@ -1,0 +1,11 @@
+image,label,split,source_filename,width,height,instances,tiny_lt16,median_longest_side_px,class_counts,sha256
+images/train/00046.jpg,labels/train/00046.txt,train,Images/val/00046.jpg,4800,2744,334,304,9.67,0:17|1:17|2:296|3:3|6:1,1d0cbd4f5a337f17a6f64a1346d20366764f6176a946ba6f4e753680d5a93b10
+images/train/00190.jpg,labels/train/00190.txt,train,Images/val/00190.jpg,4800,2744,4430,4314,9.26,2:4312|3:14|4:27|5:17|6:60,22f48f62b454bebfa010e5ed039f70ce01dce55e6d8e81de91fcc72fdde6f36d
+images/train/00339.jpg,labels/train/00339.txt,train,Images/val/00339.jpg,4800,2744,258,169,13.31,0:8|2:174|3:1|4:1|5:72|6:1|7:1,5d6c643ba805f8a84a857751df2bb7bacdee2ca33717b8764763d13fb1edae1b
+images/train/00568.jpg,labels/train/00568.txt,train,Images/val/00568.jpg,4755,2785,394,3,22.44,2:311|3:1|4:2|5:2|6:1|7:77,cab395aaf7f12a0f02999d02f210b8d733147fb4f646637b8e0fb16a474c6b76
+images/train/00599.jpg,labels/train/00599.txt,train,Images/val/00599.jpg,4800,2744,1354,1336,10.40,0:18|2:1|3:19|5:1289|6:11|7:16,282b2b93b00dc92b151051034025d7f703d621534c8f8bbbfc76c6f5a642970d
+images/train/00849.jpg,labels/train/00849.txt,train,Images/val/00849.jpg,3225,2003,3459,0,25.90,2:3446|3:13,d14b5e00142cdbac8d05ad0a87c461f879a301b9dce4c1c8e4e1671904b6e30d
+images/train/00893.jpg,labels/train/00893.txt,train,Images/val/00893.jpg,4689,2655,2485,1996,14.76,0:64|1:5|2:2357|3:13|4:28|5:12|6:4|7:2,2f5ed43e01e37b3a3c80e0a486f6dd08aa3f93a72313c2b582457dac7e0068fd
+images/val/01579.jpg,labels/val/01579.txt,val,Images/val/01579.jpg,4800,2744,2,0,40.80,0:2,ae3bd8d2bbc4176c737fb2d7285f09d350adf5b85f3353a40db6751502e084f9
+images/val/02114.jpg,labels/val/02114.txt,val,Images/val/02114.jpg,4755,2785,4688,1326,20.95,2:1173|3:18|4:3459|5:4|7:34,0f3458528a6b5ddd43df3c9fac1e069fc94918865ffe7b70a9db546a2c78753d
+images/train/02213.jpg,labels/train/02213.txt,train,Images/val/02213.jpg,4800,2879,115,1,32.05,6:4|8:111,fbc6d06417bb6038b267d3f0b40e289756b6dfefe8ee748188b205b599c96ea5
