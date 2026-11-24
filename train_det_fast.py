@@ -1,6 +1,8 @@
+import os
+os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
+
 import argparse
 import math
-import os
 import random
 import time
 from contextlib import nullcontext
@@ -737,8 +739,8 @@ def evaluate(model, dataset, device, eval_batch=8, eval_workers=0):
                     bucket_data[(name, threshold)]["n_gt"] += count
             candidates = detections[class_id]
             if candidates:
-                det_boxes = torch.stack([item[0] for item in candidates])
-                det_scores = torch.stack([item[1] for item in candidates])
+                det_boxes = torch.stack([item[0] for item in candidates]).cpu()
+                det_scores = torch.stack([item[1] for item in candidates]).cpu()
                 pixel_scale = torch.tensor(
                     [width, height, width, height], dtype=det_boxes.dtype,
                 )
@@ -908,7 +910,7 @@ def parse_args(argv=None):
     parser.add_argument("--device", default=DEVICE)
     parser.add_argument("--batch-size", type=int, default=BATCH_SIZE)
     parser.add_argument("--grad-accum", type=int, default=GRAD_ACCUM_STEPS)
-    parser.add_argument("--workers", type=int, default=0)
+    parser.add_argument("--workers", type=int, default=8)
     parser.add_argument("--eval-workers", type=int, default=0)
     parser.add_argument("--seed", type=int, default=SEED)
     parser.add_argument("--epochs", type=int, default=None)
